@@ -160,31 +160,262 @@ section {
 }
 
 
+/* Plant lover section */
+
+.flower-lover {
+    margin-top: 150px;
+}
+
+.flower-lover-container {
+    gap: 75px;
+}
 
 
+.plant-img {
+    position: relative;
+    width: fit-content;
+}
+
+
+.trusted-badge {
+    position: absolute;
+    top: -125px;
+    left: 355px;
+    width: 280px;
+    height: 280px;
+}
+
+.flower-lover-title {
+    font-weight: 700;
+    font-size: 3.125rem;
+    margin: 0px 10px;
+}
+
+.flower-lover-info p{
+    font-weight: 300;
+    font-size: 1.375rem;
+    margin: 15px 5px;
+}
+
+/* latest deal style */
+
+.deals-info {
+    margin-top: 150px;
+}
+
+.deals-title {
+    font-weight: bold;
+    font-size: 3.125rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.deals-description {
+    font-weight: 400;
+    font-size: 1.375rem;
+    text-align: center;
+}
+
+
+.deals-card {
+    margin-top: 150px;
+    gap: 20px;
+}
+
+
+.bloom-plant {
+    background-image: url(assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width:100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+
+.ana-plant {
+    background-image: url(assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 360px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 14px;
+
+
+}
+
+.zoba-plant {
+    background-image: url(assets/deal-zabo.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 753px;
+    height: 423px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 14px;
+}
+
+.bloom-plant h3,
+.ana-plant h3 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.zoba-plant h3 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: #ffffff;
+    margin: 5px;
+
+}
+
+.bloom-plant a,
+.ana-plant a {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.zoba-plant a {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+/* join section */
+
+.join-section{
+    width: 100vp;
+    background-image: url(assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+main > .join-section {
+    max-width: none;
+}
+
+.join-container{
+    width: 830px;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.join-container h1{
+    font-weight: 700;
+    font-size: 3.25rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    
+}
+
+.join-box{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.join-box input{
+    background-color: #fff;
+    width: 70%;
+    border: none;
+    font-size: 1rem;
+    padding: 8px 20px;
+}
+.join-box button{
+    background-color:#E95A08;
+    padding: 26px 50px;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
      
 /* for smaller device */
 @media screen and (max-width: 576px){
 
-    /* nav responsive */
+ 
     .nav-links {
         display: none;
     }
-/* banner responsive */
+
     .banner {
         flex-direction: column-reverse;
     }
-    /* card secton responsive */
-    .plant-lover-container,
-    .deals-card ,
-    .footer-section{
-        flex-direction: column;
-    }
+
     
     .shop-card {
         grid-template-columns: repeat(2, 1fr);
 
+    }
+
+    
+    .flower-lover-container,
+    .deals-card {
+        flex-direction: column;
+    }
+    .trusted-badge {
+        display: none;
+    }
+     .flower-store-img {
+        width: 100%;
+    }
+
+    
+    .bloom-plant,
+    .ana-plant,
+    .zoba-plant{
+        width: 100%;
+        height: 361px;
+    }
+
+    .zoba-plant h3 {
+        font-weight: 700;
+        font-size: 1.75rem;
+        margin: 5px;
+    }
+
+    .zoba-plant a {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+     .join-container input{
+        padding: 8px 15px;
+    }
+    .join-box button{
+        padding: 15px 20px;
     }
 
 }
