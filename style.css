@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* shared style */
+.text-primary{
+    color: #E95A08;
+}
+.text-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.display-flex{
+    display: flex;
+}
+.gray-500{
+    color: rgba(107, 114, 128, 1);
+}
+.nav-color{
+    color: #8987A1;
+}
+/* nav styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 48px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 400;
+}
+.home{
+    font-weight: bold;
+    color: #252432;
+}
+.cart-item{
+     list-style: none;
+     
+}
+.navbar, .banner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* banner related styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 226px;
+}
+.banner-title{
+    max-width: 570px;
+    font-size: 4.063rem;
+    font-weight: bold;
+}
+.banner-description{
+    max-width: 570px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -30px;
+}
+.banner-img{
+    width: 570px;
+    height: 355px;
+}
+/* main section styles */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+        
+     
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* for smaller device */
+@media screen and (max-width: 576px){
+
+    .nav-item{
+        display: none;
+    }
+    .cart-item, .brand-logo{
+        margin: 13px 16px 0px 16px;
+    }
+
+    .banner{
+        flex-direction: column;
+        margin: 28px 0px 0px 0px;
+        padding: 0;
+        width: 100%;
+    }
+    .banner-img{
+        order: -1;
+        width: 100vw;
+        height: auto;
+    }
+    .banner-content{
+        margin: 10px 16px 0px 16px;
+    }
+    .banner-title{
+        max-width: 191px;
+        font-size: 1.5rem;
+    }
+    .banner-description{
+        max-width: 360px;
+        font-size: 0.875rem;
+        padding-top: 13px;
+
+    }
+}
